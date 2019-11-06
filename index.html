@@ -11,30 +11,29 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
 
         <header>
 
-            <div class="row header-container">
+            <div class="row header-container no-gutters">
 
                 <nav>
-
                     <ul>
-                        <li>
-                            <img src="https://trello-attachments.s3.amazonaws.com/5db619435b43956379ddd426/5db619435b43956379ddd43d/x/1449db5f995dd58ca6bbaf55e3d183be/brand-white.png"
-                                alt="Logo">
-                        </li>
+                        <img src="https://trello-attachments.s3.amazonaws.com/5db619435b43956379ddd426/5db619435b43956379ddd43d/x/1449db5f995dd58ca6bbaf55e3d183be/brand-white.png"
+                            alt="Logo">
                         <li>HOME</li>
                         <li>PROFILE</li>
                         <li>MESSAGES</li>
                         <li>DOCS</li>
                     </ul>
 
-                    <ul>
-                        <li><input type="text" placeholder="Search"></li>
-                        <li><i>O</i></li>
-                        <li><img src="#" alt="#"></li>
-                    </ul>
+                    <div class="search-container">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                        <i>i</i>
+                        <img src="" alt="image">
+                    </div>
 
                 </nav>
 
@@ -44,9 +43,9 @@
 
         <main>
 
-            <div class="main-container row">
+            <div class="main-container row no-gutters">
 
-                <div class="col-4">
+                <div class="col-12 col-md-3 border-col">
 
                     <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum odit, doloremque quia
                         blanditiis porro et mollitia tempore culpa esse vero quibusdam ipsum excepturi velit cupiditate
@@ -62,11 +61,11 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-12 col-md-6 container-message">
 
-                    <div class="container-message">
-
-                        <input type="text" placeholder="Message">
+                        <article>
+                            <input type="text" placeholder="Message">
+                        </article>
 
                         <article>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor, ut quibusdam
@@ -74,23 +73,17 @@
                             expedita quas, recusandae corrupti quos odio.
                         </article>
 
-                        <hr>
-
                         <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla et, maiores minima
                             ipsum, magnam quasi saepe doloremque eaque impedit debitis optio consequuntur aperiam
                             adipisci sunt maxime mollitia voluptate? Tenetur, ab.</article>
-
-                        <hr>
 
                         <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus perspiciatis magni
                             amet non eos assumenda? Quibusdam reprehenderit a corporis quae quis unde, rerum voluptate
                             dolorem architecto officiis molestiae, nemo mollitia.</article>
 
-                    </div>
-
                 </div>
 
-                <div class="col-4">
+                <div class="col-12 col-md-2 border-col">
 
                     <article>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae in perspiciatis facilis, at

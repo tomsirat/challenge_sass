@@ -1,8 +1,18 @@
 .display-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 $bg-nav: #3097d1;
 $width-container: 80%;
+$margin-nav: 1rem 0 1rem 0;
+
+$space-nav : 0;
+
+$space-main: 2rem;
+
+@mixin article-border {
+    border: 1px gray solid;
+    border-radius: 10px;
+    
+}

@@ -1,0 +1,44 @@
+main{
+    background: #f5f8fa;
+
+    .main-container{
+
+        width: $width-container;
+        margin: auto;
+        justify-content: space-between;
+        padding: $space-main 0 $space-main 0;
+
+        .border-col article{
+            margin-bottom: $space-main;
+            @include article-border;
+        }
+
+        article{
+            background: white;
+            padding: 1rem;
+        }
+
+        .container-message{
+            background: white;
+
+
+            article{
+                border-bottom: 1px solid gray;
+
+                &:nth-child(1){
+                    display: flex;
+                    justify-content: center;
+    
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+
+            
+            input{
+                margin: auto;
+            }
+        }
+    }
+}
