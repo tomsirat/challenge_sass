@@ -1,0 +1,23 @@
+.display-nav, header nav, header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header {
+  background-color: #3097d1; }
+  header .header-container {
+    width: 80%;
+    margin: auto;
+    display: flex; }
+  header nav {
+    width: 100%; }
+    header nav ul {
+      flex-direction: row;
+      list-style: none; }
+    header nav:nth-child(1) li {
+      color: white;
+      margin-right: 2rem; }
+      header nav:nth-child(1) li img {
+        width: 40%; }
+
+/*# sourceMappingURL=style.css.map */
