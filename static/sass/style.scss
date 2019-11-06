@@ -1,0 +1,42 @@
+@import "varlist";
+
+header {
+
+    background-color: $bg-nav;
+
+
+    .header-container {
+
+        width: $width-container;
+        margin: auto;
+        display: flex;
+
+    }
+
+    nav {
+
+        width: 100%;
+        @extend .display-nav;
+
+     ul {
+
+        @extend .display-nav;
+        flex-direction: row;
+        list-style: none;
+        
+        
+        }
+
+        &:nth-child(1) li {
+
+            color: white;
+            margin-right: 2rem;
+
+            img {
+                width: 40%;
+            }
+        }
+    
+    }
+
+}
