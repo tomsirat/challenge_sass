@@ -50,7 +50,25 @@ header {
         .search-container{
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: space-between; 
+
+            i {
+            color: white;
+            }
+
+            img {
+                width: 100%;
+                border-radius: $img-radius;
+                
+            }
+            
+            .img-top-right {
+                width: 10%;
+            }
         }
+
+       
     
     }
 

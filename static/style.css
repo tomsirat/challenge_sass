@@ -32,7 +32,16 @@ header {
       margin-right: 0; }
     header nav .search-container {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      header nav .search-container i {
+        color: white; }
+      header nav .search-container img {
+        width: 100%;
+        border-radius: 50%; }
+      header nav .search-container .img-top-right {
+        width: 10%; }
 
 main {
   background: #f5f8fa; }
@@ -41,15 +50,32 @@ main {
     margin: auto;
     justify-content: space-between;
     padding: 2rem 0 2rem 0; }
-    main .main-container .border-col article {
-      margin-bottom: 2rem;
-      border: 1px gray solid;
-      border-radius: 10px; }
+    main .main-container .border-col {
+      position: relative;
+      z-index: 1; }
+      main .main-container .border-col article {
+        margin-bottom: 2rem;
+        border: 1px gray solid;
+        border-radius: 10px; }
+      main .main-container .border-col .profile-img {
+        background-color: white;
+        position: absolute;
+        width: 25%;
+        padding: 0.2rem;
+        border: gray solid 1px;
+        border-radius: 50%;
+        bottom: -25%;
+        left: 37.5%;
+        z-index: 5; }
+        main .main-container .border-col .profile-img img {
+          max-width: 100%;
+          border-radius: 50%; }
     main .main-container article {
       background: white;
       padding: 1rem; }
     main .main-container .container-message {
-      background: white; }
+      background: white;
+      border: 1px solid gray; }
       main .main-container .container-message article {
         border-bottom: 1px solid gray; }
         main .main-container .container-message article:nth-child(1) {

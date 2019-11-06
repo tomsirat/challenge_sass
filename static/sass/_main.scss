@@ -1,3 +1,5 @@
+
+
 main{
     background: #f5f8fa;
 
@@ -8,10 +10,36 @@ main{
         justify-content: space-between;
         padding: $space-main 0 $space-main 0;
 
-        .border-col article{
-            margin-bottom: $space-main;
-            @include article-border;
-        }
+        .border-col{
+            position: relative;
+            z-index: 1;
+
+            article{
+                margin-bottom: $space-main;
+                @include article-border;
+            }
+
+            .profile-img {
+                background-color: white;
+                position: absolute;
+                width: 25%;
+                padding: 0.2rem;
+                border: gray solid 1px;
+                border-radius: $img-radius;
+                bottom : -25%;
+                left: 37.5%;
+                z-index: 5;
+
+
+                img {
+                    max-width: 100%;
+                    border-radius: $img-radius;
+
+                }
+            }
+            
+
+        } 
 
         article{
             background: white;
@@ -20,6 +48,8 @@ main{
 
         .container-message{
             background: white;
+            border: 1px solid gray;
+
 
 
             article{
@@ -28,6 +58,7 @@ main{
                 &:nth-child(1){
                     display: flex;
                     justify-content: center;
+
     
                     input{
                         width: 100%;
@@ -38,6 +69,7 @@ main{
             
             input{
                 margin: auto;
+
             }
         }
     }
